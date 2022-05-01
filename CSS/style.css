@@ -1,0 +1,130 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* HEADER */
+
+.header__heading {
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.header__heading-gray {
+    color: var(--Very-Dark-Blue);
+    text-align: center;
+    margin-top: 0;
+}
+
+.header__text {
+    color: var(--Grayish-Blue);
+    padding: 0 2rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+
+/* CARD */
+
+.plan {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    width: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+    padding: 0 2rem;
+    box-shadow: 2px 2px 20px -10px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 3rem;
+}
+
+.card--top {
+    margin-top: 4rem;
+}
+
+.card--primary {
+    border-top: 3px solid var(--Cyan);
+}
+
+.card--secondary {
+    border-top: 3px solid var(--Red);
+}
+
+.card--accent {
+    border-top: 3px solid var(--Orange);
+}
+
+.card--tertiary {
+    border-top: 3px solid var(--Blue);
+}
+
+.card__heading {
+    color: var(--Very-Dark-Blue);
+    padding-top: 2rem;
+}
+
+.card__text {
+    color: var(--Grayish-Blue);
+    margin-bottom: 4rem;
+}
+
+.card__image {
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .plan {
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .card {
+        width: 500px;
+        margin: 1rem;
+    }
+    .card--primary {
+        align-self: center;
+    }
+    .card--tertiary {
+        align-self: center;
+    }
+    .card--secondary,
+    .card--accent {
+        width: 430px;
+    }
+    .card__image {
+        width: 50px;
+        height: 50px;
+    }
+}
