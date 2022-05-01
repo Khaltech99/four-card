@@ -103,6 +103,9 @@ body {
     margin-bottom: 2.5rem;
 }
 
+
+/* @MEDIA */
+
 @media screen and (min-width:768px) {
     .plan {
         margin: 3rem auto;
